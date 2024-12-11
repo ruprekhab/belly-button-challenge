@@ -123,9 +123,7 @@ function init() {
     // Hint: Inside a loop, you will need to use d3 to append a new
     // option for each sample name.
     names.forEach((sample) => {
-      option = dropDownSelect.append("option");
-      text = option.text(sample);
-      property = text.property("value", sample);
+      option = dropDownSelect.append("option").text(sample).property("value", sample);
       });
 
 
